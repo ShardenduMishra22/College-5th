@@ -5,9 +5,9 @@ const UserContextProvider = ({children} : {children: ReactNode}) => {
   const [user, setUser] = useState(null)
   
   return (
-    <UserContext.Provider value={{user, setUser}}>
+    <UserContext value={{user, setUser}}>
       {children}
-    </UserContext.Provider>
+    </UserContext>
   )
 }
 
